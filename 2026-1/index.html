@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="CMSC 191: Computer and Network Security, Institute of Computer Science, University of the Philippines Los Banos">
+      <meta name="author" content="Joseph Anthony C. Hermocilla">
+
+      <title>CMSC 191 (Special Topics): Cybersecurity (First Semester 2026-2027)</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="../lib/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+      
+      <style>
+         .cmscwide {
+            width:100%;
+            height:100%;
+            background-image:url('./shellaccess.png');
+            background-size:cover;
+         }
+      </style>
+
+   </head>
+
+   <body id="page-top">
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+         <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">CMSC 191</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#staff">Staff</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
+                  </li>
+                   <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="https://youtube.com/@cmsc191-cybersec-uplb">Videos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#resources">Resources</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <header class="bg-primary text-white cmscwide">
+         <div class="container text-center">
+            <h1><span style="background-color:blue;">Special Topics (Cybersecurity)</span></h1>
+            <p class="lead"><span style="color:yellow;background-color:black;">First Semester AY 2026-2027</span></p>
+         </div>
+      </header>
+
+      <section id="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                  <h2>About</h2>
+                  <h5>Catalog Description</h5>
+                  <div class="container">
+                  <table class="table table-condensed table-sm">
+                     <tbody>
+                        <tr>
+                           <td>Course Number and Section</td>
+                           <td>CMSC 191 EF</td>
+                        </tr>
+                        <tr>
+                           <td>Course Title</td>
+                           <td>Special Topics (Cybersecurity)</td>
+                        </tr>
+                        <tr>
+                           <td>Description</td>
+                           <td>Concepts in protecting computer systems and networks from attacks.</td>
+                        </tr>
+                        <tr>
+                           <td>Prerequisites</td>
+                           <td>CMSC 125 and CMSC 131 or COI</td>
+                        </tr>
+                        <tr>
+                           <td>Credit</td>
+                           <td>3 units</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+                  <h5>Aim</h5>
+                  <p>This course aims to equip students with the knowledge and skills in identifying threats and vulnerabilities as well as developing protection mechanisms for computer systems and networks.</p>
+                  <h5>Objectives</h5>
+                  At the end of this course the student should be able to: 
+                  <ol>
+                     <li>explain the fundamental concepts in computer systems security: confidentiality, integrity, availability, asset, threat, attack, policy, mechanism;</li>
+                     <li>find and identify software, platform, and network security vulnerabilities;</li>
+                     <li>develop and use exploits for security vulnerabilities;</li>
+                     <li>perform incident response and digital forensics after a security breach; </li>
+                     <li>apply secure programming practices;</li>
+                     <li>design, implement, and deploy secure network and web services; and</li>
+                     <li>explain and evaluate the legal and ethical implications of security attacks and breaches.</li>
+                  </ol>
+                  <h5>Topics (based on <a href="../acm2023-sec.pdf">ACM's 2023 CS Curriculum Guidelines: Security</a>)</h5>
+                  <ol>
+                     <li>SEC-Foundations: Foundational Security</li>
+                     <li>SEC-SEP: Society, Ethics, and the Profession</li>
+                     <li>SEC-Coding: Secure Coding</li>
+                     <li>SEC-Crypto: Cryptography</li>
+                     <li>SEC-Engineering: Security Analysis, Design, and Engineering</li>
+                     <li>SEC-Forensics: Digital Forensics</li>
+                     <li>SEC-Governance: Security Governance</li>
+                  </ol>
+                  Specific topics
+                  <ul>
+                     <li>Why Computer Security is challenging?</li>
+                     <li>Computer Security Strategy</li>
+                     <li>Symmetric Encryption</li>
+                     <li>Asymmetric Encryption</li>
+                     <li>Software Security</li>
+                     <li>Database Security</li>
+                     <li>Penetration Testing</li>
+                     <li>Buffer Overflow Attacks</li>
+                     <li>TCP/IP and attacks</li>
+                     <li>DNS and attacks</li>
+                     <li>Malicious Software</li>
+                     <li>IT Security Management and Risk Assessment</li>
+                     <li>IT Security Controls, Plans, and Procedures</li>
+                     <li>Human Resources Security</li>
+                  </ul>
+                  <h5>Evaluation/Grading(Tentative)</h5>
+                     <table class="table table-sm">
+                        <tr>
+                           <td>Exercises</td>
+                           <td>45%</td>
+                        </tr>
+                        <tr>
+                           <td>Quizzes</td>
+                           <td>10%</td>
+                        </tr>
+                        <tr>
+                           <td>CTF Exam</td>
+                           <td>25%</td>
+                        </tr>
+                        <tr>
+                           <td>Written Exam</td>
+                           <td>20%</td>
+                        </tr>
+
+                        <tr>
+                           <td><b>Total</b></td>
+                           <td><b>100%</b></td>
+                        </tr>
+                     </table>
+                     Passing grade is 55%. No grade of 4.0 will be given. Grading scale is shown below. 
+                     <table class="table table-sm table-striped">
+                        <tr>
+                           <td>0.00</td>
+                           <td>54.99</td>
+                           <td>5.0</td>
+                        </tr>
+                        <tr>
+                           <td>55.00</td>
+                           <td>59.99</td>
+                           <td>3.0</td>
+                        </tr>
+                        <tr>
+                           <td>60.00</td>
+                           <td>64.99</td>
+                           <td>2.75</td>
+                        </tr>
+                        <tr>
+                           <td>65.00</td>
+                           <td>69.99</td>
+                           <td>2.5</td>
+                        </tr>
+                        <tr>
+                           <td>70.00</td>
+                           <td>74.99</td>
+                           <td>2.25</td>
+                        </tr>
+                        <tr>
+                           <td>75.00</td>
+                           <td>79.99</td>
+                           <td>2.0</td>
+                        </tr>
+                        <tr>
+                           <td>80.00</td>
+                           <td>84.99</td>
+                           <td>1.75</td>
+                        </tr>
+                        <tr>
+                           <td>85.00</td>
+                           <td>89.99</td>
+                           <td>1.5</td>
+                        </tr>
+                        <tr>
+                           <td>90.00</td>
+                           <td>94.99</td>
+                           <td>1.25</td>
+                        </tr>
+                        <tr>
+                           <td>95.00</td>
+                           <td>100</td>
+                           <td>1.0</td>
+                        </tr>
+                     </table>
+                  <h5>Attendance Policy</h5>
+                  <p>Attendance will be checked every meeting. Students with four(4) or more absences will be automatically dropped from the course. </p>
+                  <h5>Collaboration Policy</h5>
+                  <p></p>
+                  <h5>Honor Code</h5>
+                     <ul>
+                        <li>Properly acknowledge help received.</li>
+                        <li>No looking at solutions/programs from previous years.</li>
+                        <li>No sharing of code with other students.</li>
+                        <li>Be ready to explain your code.</li>
+                     </ul> 
+                  <h5>Google Classroom: <u></u> </h5>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section id="staff" class="bg-light">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                  <h2>Staff</h2>
+                  <table class="table table-striped table-sm">
+                     <thead>
+                     <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Email</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Joseph Anthony C. Hermocilla</td>
+                           <td>Instructor</td>
+                           <td>jchermocilla@up.edu.ph</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="schedule">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                  <h2>Schedule</h2>
+                  <table class="table table-sm table-striped table-bordered">
+                     <thead class="thead-inverse">
+                        <tr>
+                           <th style="width:10%">Week</th>
+                           <th>Date</th>
+                           <th>Topic</th>
+                           <th>Learning Materials</th>
+                           <th>Laboratory</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           <th scope="row">1</th>
+                           <td>Aug 3-7</td>
+                           <td colspan="3"><b>COURSE OVERVIEW AND ADMINISTRATIVE MATTERS</b></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">2</th>
+                           <td>Aug 10-14</td>
+                           <td>The Confidentiality-Integrity-Availability triad</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">3</th>
+                           <td>Aug 17-21 (Aug 21 - Ninoy Aquino Day)</td>
+                           <td>Environment Variables and Set UID</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">4</th>
+                           <td>Aug 24-28</td>
+                           <td>Shellshock</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">5</th>
+                           <td>Aug 31-Sep 4 (Aug 31 - National Heroes Day)</td>
+                           <td>Buffer Overflow</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">6</th>
+                           <td>Sep 7-11</td>
+                           <td>Secret-Key Encryption</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">7</th>
+                           <td>Sep 14-18 (Sep 17 - Los Banos Day)</td>
+                           <td>Public-Key Infrastructure</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">8</th>
+                           <td>Sep 21-25</td>
+                           <td>Cross-Site Scripting</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">9</th>
+                           <td>Sep 28-Oct 2</td>
+                           <td>SQL Injection</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">10</th>
+                           <td>Oct 5-9</td>
+                           <td>TCP/IP Attacks</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">11</th>
+                           <td>Oct 12-16</td>
+                           <td>Local DNS Attacks</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">12</th>
+                           <td>Oct 19-23</td>
+                           <td>Penetration Testing</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row"></th>
+                           <td>Oct 29-31</td>
+                           <td colspan="3"><b>READING BREAK</b></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">13</th>
+                           <td>Nov 2-6</td>
+                           <td>Malware Analysis</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">14</th>
+                           <td>Nov 9-13</td>
+                           <td>(Buffer Week)</td>
+                           <td>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">15</th>
+                           <td>Nov 16-20</td>
+                           <td>(Buffer Week)</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">16</th>
+                           <td>Nov 23-27</td>
+                           <td colspan="3"><b>CTF EXAM</b></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Finals Week</th>
+                           <td>Dec 1-7</td>
+                           <td colspan="3"><b>WRITTEN EXAM</b></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="resources">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                  <h2>Resources</h2>
+                  <h5>Main Resources</h5>
+                  <ul>
+                     <li>Lecture: [STA]:Stallings, W. and Brown, L. (2024). Computer Security: Principles And Practice  (5th ed.) Pearson Education Inc.</li>
+                     <li>Labs: <a href="https://seedsecuritylabs.org/">SEED Labs</a></li>
+                  </ul>
+                  <h5>Supplementary Textbooks</h5>
+                  <ul>
+                    <li>Wenliang Du.(2017).<a href="https://www.handsonsecurity.net/">Computer Security: A Hands-on Approach.</a></li>
+                    <li>Goodrich, M., & Tamassia, R. (2010). Introduction to computer security. Addison-Wesley Publishing Company</li>
+                    <li>Pfleeger, C. P., & Pfleeger, S. L. (2002). Security in computing. Prentice Hall Professional Technical Reference.</li>
+                    <li>Gollmann, D. (2011). Computer Security. John Wiley & Sons.</li>
+                    <li>Bishop, M. (2006). Introduction to computer security. Pearson Education India.</li>
+                    <li>Bishop, M. (2003). Computer Security: Art and Science. ISBN: 0-201-44099-7. Addison-Wesley Publishing Company.</li>
+                    <li>Kaufman, C., Perlman, R., and Speciner, M. (2002). Network security: private communication in a public world. Prentice Hall Press.</li>
+                    <li>Jon Erickson. (2008). Hacking: The art of exploitation. No Starch Press, Inc.</li>
+                    <li>Michael Sikorski and Andrew Honig.(2012). Practical Malware Analysis. No Starch Press, Inc.</li>
+                  </ul>
+                  <h5>Similar CNSEC Courses</h5>
+                  <ul>
+                     <li><a href="http://ics.uplb.edu.ph/courses/grad/it/280">IT 280</a></li>
+                     <li><a href="https://crypto.stanford.edu/cs155/">Stanford</a></li>
+                     <li><a href="http://css.csail.mit.edu/6.858/2017/schedule.html">MIT</a></li>
+                     <li><a href="http://www.cs.umd.edu/~jkatz/security/f09/syllabus.html">UMD</a></li>
+                     <li><a href="https://inst.eecs.berkeley.edu/~cs161/fa18/">UCB</a></li>
+                  </ul>
+                  <h5>Software and Others</h5>
+                  <ul>
+                     <li><a href="https://www.cisecurity.org">Center for Internet Security</a>
+                     <li><a href="https://thehackernews.com/">The Hacker News</a>
+                     <li><a href="https://www.nist.gov/itl/applied-cybersecurity/nice/resources/nice-cybersecurity-workforce-framework">NICE</a>
+                     <li><a href="https://github.com/cliffe/SecGen/">SecGen vuln VM generator</a>
+                     <li><a href="https://github.com/enaqx/awesome-pentest">Awesome Pentest</a>
+                     <li><a href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/csec2017.pdf">ACM Cybersecurity Curricula Recommendations 2017</a>
+                     <li><a href="https://www.vagrantup.com/">Vagrant</a>
+                     <li><a href="https://www.virtualbox.org/">VirtualBox</a></li>
+                     <li><a href="https://www.kali.org/">Kali Linux</a></li>
+                     <li><a href="http://www.phrack.org/">Phrack Magazine</a></li>
+                     <li><a href="https://www.exploit-db.com/">Exploit DB</a></li>
+                     <li><a href="https://cve.mitre.org/">Common Vulnerabilities Exposures</a></li>
+                     <li><a href="http://www.dvwa.co.uk/">Damn Vulnerable Web Applications</a></li>
+                     <li><a href="https://nvd.nist.gov/">National Vulnerability Database</a></li>
+                     <li><a href="https://pentesterlab.com/">PentesterLab</a></li>
+                     <li><a href="http://www.dict.gov.ph/cybersecurity/">Cybersecurity in the Philippines</a></li>
+                     <li><a href="http://www.pentest-standard.org/index.php/Main_Page">Penetration Test Execution Standard</a></li>
+                     <li><a href="https://www.vulnhub.com/">Vulnerable by Design</a></li>
+                     <li><a href="https://www.offensive-security.com/metasploit-unleashed/">Metasploit Unleashed</a></li>
+                     <li><a href="http://shell-storm.org/shellcode/">Shellcode Database</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-5 bg-dark">
+         <div class="container">
+i           <p class="m-0 text-center text-white">Copyright &copy; 2026 SRG-ICS-UPLB</p>
+            <p class="m-0 text-center text-white">CC BY-NC-SA 4.0</p>
+            <p class="m-0 text-center text-white"><a id="validate" href="#">Validate HTML</a></p>
+         </div>
+         <!-- /.container -->
+      </footer>
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="../../lib/vendor/jquery/jquery.min.js"></script>
+      <script src="../../lib/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Plugin JavaScript -->
+      <script src="../../lib/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+      <!-- Custom JavaScript for this theme -->
+      <script src="../../lib/js/scrolling-nav.js"></script>
+
+      <script>
+         document.getElementById('validate').href =
+         'https://validator.w3.org/nu/?doc=' + encodeURIComponent(location.href);
+      </script>
+
+   </body>
+
+</html>
