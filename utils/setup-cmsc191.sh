@@ -8,8 +8,8 @@ set -e
 # =============================================================
 # CONFIG - edit these
 # =============================================================
-USERNAME="cmsc125"
-PASSWORD="kernel"
+USERNAME="cmsc191"
+PASSWORD="exploit"
 
 # VirtualBox is installed from Oracle's own APT repo instead of Ubuntu's
 # multiverse package, since Oracle's repo tracks the current upstream
