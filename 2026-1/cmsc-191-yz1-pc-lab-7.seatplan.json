@@ -1,0 +1,167 @@
+{
+  "title": "CMSC 191 YZ1 (PC Lab 7))",
+  "stageLabel": "Front",
+  "aisleLabel": "Aisle",
+  "blocks": [
+    {
+      "cols": 6,
+      "rows": 4,
+      "breaks": []
+    }
+  ],
+  "roster": [
+    {
+      "id": "s1",
+      "name": "ADAME KATHERINE ABO",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s2",
+      "name": "ALAMILLO VAL DERRICK JAMES CARIÑO",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s3",
+      "name": "AÑASCO MUNDJIE GONZAGA",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s4",
+      "name": "AQUINO JUSTIN NOEL ORDINARIO",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s5",
+      "name": "AUDIJE AUBREY ATIENZA",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s6",
+      "name": "CABRAL ALEXA GWEN MERCADO",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s7",
+      "name": "CALIXTRO KURT IVAN ESPIÑO",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s8",
+      "name": "CEA ALYSSA FENIX",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s9",
+      "name": "ESPINOCILLA HAIRA MARIE DELA CRUZ",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s10",
+      "name": "LLAMAS YUVAL GABRIEL GERVASIO",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s11",
+      "name": "MAGMANLAC IOANNES DEI REAL",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s12",
+      "name": "MANAOAT TANYA MARINELLE GAVINO",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s13",
+      "name": "MANDAP CLARENCE PEREZ",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s14",
+      "name": "MENDE TAJAN CAELI BETE",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s15",
+      "name": "ORTIZ GAVIN JOSH SACDALAN",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s16",
+      "name": "PRUDENCIO YHANNIS GEOSH ORTEGA",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s17",
+      "name": "ROMERO SEAN CALEB REYES",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s18",
+      "name": "SILERIO CRIZZELE DENISSE YAMSUAN",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s19",
+      "name": "UICHANCO LORENZO RAFAEL VILLARUZ",
+      "section": "",
+      "batch": 0
+    },
+    {
+      "id": "s20",
+      "name": "VENDER ALAN BENEDICT SISON",
+      "section": "",
+      "batch": 0
+    }
+  ],
+  "batches": [
+    {
+      "name": "All students",
+      "order": "random",
+      "seed": "69"
+    }
+  ],
+  "seats": {
+    "0-1-1": "s1",
+    "0-1-2": "s16",
+    "0-1-3": "s6",
+    "0-1-4": "s5",
+    "0-1-5": "s11",
+    "0-1-6": "s19",
+    "0-2-1": "s13",
+    "0-2-2": "s14",
+    "0-2-3": "s18",
+    "0-2-4": "s8",
+    "0-2-5": "s2",
+    "0-2-6": "s4",
+    "0-3-1": "s17",
+    "0-3-2": "s7",
+    "0-3-3": "s20",
+    "0-3-4": "s9",
+    "0-3-5": "s15",
+    "0-3-6": "s3",
+    "0-4-1": "s12",
+    "0-4-2": "s10"
+  },
+  "off": {},
+  "pins": {},
+  "seatOrder": "row",
+  "view": "audience"
+}
